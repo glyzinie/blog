@@ -1,0 +1,50 @@
+enableGitInfo = true
+enableRobotsTXT = true
+footnoteReturnLinkContents = "↩"
+paginatePath = ""
+pluralizeListTitles = false
+relativeURLs = true
+
+languageCode = "ja"
+defaultContentLanguage = "ja"
+hasCJKLanguage = true
+
+baseurl = "https://blog.glyzinie.net"
+title = "Wis's Blog"
+
+[params]
+description = "気になった技術などを中心に書いていこうとおもいます!"
+logo = ""
+favicon = "https://twemoji.maxcdn.com/v/latest/svg/1f98b.svg"
+
+[params.author]
+name = "Wis"
+url = "https://glyzinie.net"
+github = "glyzinie"
+
+[[menus.main]] # Enable Menu Bar
+weight = 1
+name = "About"
+url = "/about"
+
+[[menus.main]]
+url = "/tags/"
+name = "Tag"
+
+[taxonomies]
+tag = "tags"
+
+[outputs]
+page = ["HTML", "AMP"]
+
+[markup.highlight]
+codeFences = false
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[[module.imports]]
+path = 'github.com/glyzinie/hugo-ran'
+
+[[module.imports]]
+path = 'github.com/glyzinie/hugo-blogcard'
